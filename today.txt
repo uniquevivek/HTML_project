@@ -1,0 +1,221 @@
+(base) PS C:\Users\Vivek Kumar Sharma\Desktop\web_tech> cmd
+Microsoft Windows [Version 10.0.19045.6332]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech>cd Electrocus
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus>cd HTML_proj
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project
+ Volume in drive C has no label.
+ Volume Serial Number is FCB6-20F7
+
+ Directory of C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocu
+               3 File(s)            132 bytes
+               3 Dir(s)  47,428,124,672 bytes free
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git branch
+* main
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git checkout -b developer1
+Switched to a new branch 'developer1'
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git brach
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git branch
+  developer1
+* main
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git checkout developer1
+Switched to branch 'developer1'
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git branch -M developer:kirti
+fatal: 'developer:kirti' is not a valid branch name
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git branch -M developer_kirti 
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git branch
+* developer_kirti
+  main
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git push origin developer_kirti
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 377 bytes | 188.00 KiB/s, done.        
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'developer_kirti' on GitHub by visiting:
+remote:      https://github.com/uniquevivek/HTML_project/pull/new/developer_kirti
+remote:
+To https://github.com/uniquevivek/HTML_project.git
+ * [new branch]      developer_kirti -> developer_kirti
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git add .
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git commit -m "change on line 1"
+[developer_kirti 8ea28df] change on line 1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 908 bytes | 227.00 KiB/s, done.
+From https://github.com/uniquevivek/HTML_project
+   63b31c6..bc2de5f  main       -> origin/main
+Updating 63b31c6..bc2de5f
+Fast-forward
+ index.html | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git branch 
+  developer_kirti
+* main
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git checkout developer_kirti
+Switched to branch 'developer_kirti'
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git checkout main           
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git checkout developer_kirti
+Switched to branch 'developer_kirti'
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git checkout main           
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git merge developer_kirti
+Merge made by the 'ort' strategy.
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git diff developer_kirti
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git checkout developer_kirti
+Switched to branch 'developer_kirti'
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git checkout developer_kirti
+Already on 'developer_kirti'
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git add .
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git commit -m "updated"
+[developer_kirti 403bbbc] updated
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git diff main
+diff --git a/index.html b/index.html
+index 07f9128..b83a236 100644
+--- a/index.html
++++ b/index.html
+@@ -1,2 +1,2 @@
+-<p>Hello Form developer: Kirti on newly maded branch</p>
++<p>Hello Form developer: Kirti  on newly maded branch , (updated)</p>
+ <h1>hello from developer1 branch</h1>
+\ No newline at end of file
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git push origin developer_kirti
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 691 bytes | 230.00 KiB/s, done.        
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/uniquevivek/HTML_project.git
+   73373f5..403bbbc  developer_kirti -> developer_kirti
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git merge main
+Merge made by the 'ort' strategy.
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git branch main
+fatal: a branch named 'main' already exists
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git checkout  main 
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git push origin main
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 233 bytes | 233.00 KiB/s, done.        
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/uniquevivek/HTML_project.git
+   bc2de5f..cdadf21  main -> main
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git checkout  developer_kirti
+Switched to branch 'developer_kirti'
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git checkout  main   
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git push origin developer_kirti
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.30 KiB | 1.30 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/uniquevivek/HTML_project.git
+   403bbbc..bd87091  developer_kirti -> developer_kirti
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 895 bytes | 89.00 KiB/s, done.
+From https://github.com/uniquevivek/HTML_project
+   cdadf21..372ffc1  main       -> origin/main
+Updating cdadf21..372ffc1
+Fast-forward
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git branch
+  developer_kirti
+* main
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git checkout  developer_kirti
+Switched to branch 'developer_kirti'
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git branch
+* developer_kirti
+  main
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git add .
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git commit -m "1111111"
+[developer_kirti b8e1d73] 1111111
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>git push origin developer_kirti
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 337 bytes | 337.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object
+To https://github.com/uniquevivek/HTML_project.git
+   bd87091..b8e1d73  developer_kirti -> developer_kirti
+
+C:\Users\Vivek Kumar Sharma\Desktop\web_tech\Electrocus\HTML_project>
